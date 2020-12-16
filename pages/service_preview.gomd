@@ -1,0 +1,111 @@
+Service Preview
+
+Note Service Preview must Traffic Manager and Traffic Agent RBACs must be deployed to the cluster.
+Please check the NameSpace page in this portal to confirm Service Preview is enabled in your cluster.
+
+
+---
+
+The Traffic Agent sidecar is required in order to intercept requests to a service and route them to your local machine.
+The Traffic Agent sidecar needs to be added to any service that you would like to use with Service Preview.
+
+With the automatic injector, we can simply add it to our services by annotating the pod with getambassador.io/inject-traffic-agent: enabled  
+
+spec:  
+  replicas: 1  
+  selector:  
+    matchLabels:  
+      app: hello  
+  template:  
+    metadata:  
+      annotations:  
+        getambassador.io/inject-traffic-agent: enabled       # Enable automatic Traffic Agent sidecar injection  
+
+
+
+Below is an example: Hello World deployment
+
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello
+  namespace: demo  # edit for appropriate namespace
+  labels:
+    app: hello
+spec:
+  selector:
+    app: hello
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: http  
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello
+  namespace: demo  # edit for appropriate namespace
+  labels:
+    app: hello
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello
+  template:
+    metadata:
+      annotations:
+        getambassador.io/inject-traffic-agent: enabled      # Enable automatic Traffic Agent sidecar injection
+      labels:
+        app: hello
+    spec:
+      containers:  
+        - name: hello
+          image: docker.io/datawire/hello-world:latest
+          ports:
+            - name: http
+              containerPort: 8000  
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
+  name: hello
+  namespace: demo                                             # edit for appropriate namespace
+spec:
+  prefix: /hello/
+  service: hello.demo:80
+---
+
+
+
+
+Edge Control Usage
+edgectl [command]
+
+Management Commands:
+  install           Install the Ambassador Edge Stack in your cluster
+  upgrade       Upgrade an Ambassador API Gateway installation managed by the Operator to Ambassador Edge Stack
+  login             Log in to the Ambassador Edge Policy Console
+  license         Set or update the Ambassador Edge Stack license key
+
+Development Commands:
+  status            Show connectivity status
+  connect         Connect to a cluster
+  disconnect    Disconnect from the connected cluster
+  intercept        Manage deployment intercepts
+
+Advanced Commands:
+  daemon         Launch Edge Control Daemon in the background (sudo)
+  pause            Turn off network overrides (to use a VPN)
+  resume          Turn network overrides on (after using edgectl pause)
+  quit                Tell Edge Control Daemon to quit (for upgrades)
+
+Other Commands:
+  version         Show program's version number and exit
+  help              Help about any command
+
+Flags:
+  -h, --help       help for edgectl
+  --no-report    turn off anonymous crash reports and log submission on failure
