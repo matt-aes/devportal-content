@@ -1,10 +1,8 @@
 Service Preview
 
-Note Service Preview must Traffic Manager and Traffic Agent RBACs must be deployed to the cluster.
+Note: Traffic Manager and Traffic Agent RBACs must be deployed to the cluster.
 Please check the NameSpace page in this portal to confirm Service Preview is enabled in your cluster.
 
-
----
 
 The Traffic Agent sidecar is required in order to intercept requests to a service and route them to your local machine.
 The Traffic Agent sidecar needs to be added to any service that you would like to use with Service Preview.
@@ -25,7 +23,7 @@ spec:
 
 
 
-Below is an example: Hello World deployment
+Example: Hello World
 
 ~~~
 ---
