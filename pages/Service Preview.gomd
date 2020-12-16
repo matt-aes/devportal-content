@@ -1,7 +1,7 @@
 Service Preview
 
 Note: Traffic Manager and Traffic Agent RBACs must be deployed to the cluster.
-Please check the [NameSpace page ](https://aes-demo.com/documentation/page/Service%20Preview "Title") in this portal to confirm Service Preview is enabled in your cluster.
+Please check the [NameSpace page ]https://aes-demo.com/documentation/page/NameSpaces "Title") in this portal to confirm Service Preview is enabled in your cluster.
 
 
 The Traffic Agent sidecar is required in order to intercept requests to a service and route them to your local machine.
