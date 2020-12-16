@@ -11,6 +11,7 @@ The Traffic Agent sidecar needs to be added to any service that you would like t
 
 With the automatic injector, we can simply add it to our services by annotating the pod with getambassador.io/inject-traffic-agent: enabled  
 
+~~~
 spec:  
   replicas: 1  
   selector:  
@@ -20,12 +21,13 @@ spec:
     metadata:  
       annotations:  
         getambassador.io/inject-traffic-agent: enabled       # Enable automatic Traffic Agent sidecar injection  
+~~~
 
 
 
 Below is an example: Hello World deployment
 
-
+~~~
 ---
 apiVersion: v1
 kind: Service
@@ -77,12 +79,14 @@ spec:
   prefix: /hello/
   service: hello.demo:80
 ---
-
+~~~
 
 
 
 Edge Control Usage
 edgectl [command]
+
+~~~
 
 Management Commands:
   install           Install the Ambassador Edge Stack in your cluster
@@ -109,3 +113,5 @@ Other Commands:
 Flags:
   -h, --help       help for edgectl
   --no-report    turn off anonymous crash reports and log submission on failure
+~~~
+
