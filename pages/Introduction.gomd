@@ -1,8 +1,4 @@
 Introduction : Sales Engineering
 ============
-tesing my master
-Here matt you can put static information about your APIs. The pages are rendered as Markdown.
-
-       some code snippet here
-       goes a long way
- 
+This portal provides information to facilitate Developer Self Service in a Kubernetes environment.  
+The contents will provide information to configure Authentication and Rate Limiting for services being deployed, without having to involve Operations.
