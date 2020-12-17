@@ -1,1 +1,44 @@
-Put Rate Limting and Auth Filter policy here
+
+
+
+| Namespace          | Owner                          | Host           |Authentication |Rate Limiting |Service Preview Enabled|
+|--------------------|--------------------------------|--------------- |--------------|---------------|-----------------------|
+| bazaar             | Bazaar Project Team            | aes-demo.com   | Yes          | Yes           | Yes                   |
+
+
+Authentication  
+Use the following Filter Policy as template  
+
+~~~
+--
+apiVersion: getambassador.io/v2
+kind: FilterPolicy
+metadata:
+  name: api-filter-policy
+  namespace: default
+spec:
+  rules:
+    - host: "aes-labs.com" 
+      path: "/foo"         # Update this value. 
+      filters:
+        - name: keycloak-oauth2-filter
+          namespace: ambassador
+          arguments:
+            scopes:
+              - "offline_access"
+---
+~~~
+
+Rate Limiting Filter has been applied to cluster.
+Rate Limits can be set to 5 RPM or 10 RPM.  
+
+5  RPM = key pattern match =
+10 RPM = key pattern match = 
+
+
+~~~
+--
+add mapping with labels example here
+---
+~~~
+
