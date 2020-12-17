@@ -4,8 +4,9 @@
 |--------------------|--------------------------------|--------------- |--------------|---------------|-----------------------|
 | ambassador         | Operations                     | N/A            | N/A          | N/A           | N/A                   |
 | argocd             | Operations                     | *              | N/A          | N/A           | N/A                   |
-|([bazaar]https://aes-demo.com/documentation/page/Bazaar-Namespace "Title")           | Bazaar Project Team            | aes-demo.com   | Yes          | Yes           | Yes                   |
+|[bazaar]: https://aes-demo.com/documentation/page/Bazaar-Namespace           | Bazaar Project Team            | aes-demo.com   | Yes          | Yes           | Yes                   |
 | bazaar-shadow      | Bazaar Project Team            | aes-demo.com   | Yes          | Yes           | Yes                   |
 | boutque            | Boutique Project Team          | aes-labs.com   | Yes          | No            | Yes                   |
 | demo               | Open to all                    | *              | No           | Yes           | Yes                   |
 | guest-book         | Boutique Project Team          | aes-labs.com   | No           | No            | No                    |
+ 
