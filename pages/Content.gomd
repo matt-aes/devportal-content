@@ -4,7 +4,7 @@ You can put all sorts of information in the Developer Portal:
 
 | Page               | Location                       | TBD           | TBD          |
 |--------------------|--------------------------------|---------------|--------------|
-| Introduction       |                                | Markdown      | Yes          |
+| Introduction       | <span style="color:blue">some *This is Blue italic.* text</span>                               | Markdown      | Yes          |
 | Content            |                      `         | Markdown      | Yes          |
 | Name Spaces        |                                |               | Yes          |
 | Authentication     |                                |               | Yes          |
