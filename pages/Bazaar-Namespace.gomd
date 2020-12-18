@@ -11,10 +11,10 @@ Use the following Filter Policy as template
 
 
 apiVersion: getambassador.io/v2  
-kind: FilterPolicy  
-metadata:  
-    name: api-filter-policy
-      namespace: default  
+kind: FilterPolicy    
+metadata:    
+    name: api-filter-policy  
+      namespace: default    
         spec:  
   rules:  
     - host: "aes-labs.com"   
