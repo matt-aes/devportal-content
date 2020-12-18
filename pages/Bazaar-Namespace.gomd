@@ -9,7 +9,6 @@
 Authentication  
 Use the following Filter Policy as template  
 
-~~~
 --
 apiVersion: getambassador.io/v2
 kind: FilterPolicy
@@ -27,7 +26,6 @@ spec:
 <span style="color:blue">scopes:</span>
 <span style="color:blue">- "offline_access"</span>
 ---
-~~~
 
 Rate Limiting Filter has been applied to cluster.
 Rate Limits can be set to 5 RPM or 10 RPM.  
