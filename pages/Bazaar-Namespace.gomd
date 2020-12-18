@@ -16,8 +16,8 @@ metadata:
 &nbsp;&nbsp;name: api-filter-policy  
 &nbsp;&nbsp;namespace: default  
 spec:  
-&nbsp;&nbsp;rules:  
-&nbsp;&nbsp;&nbsp;&nbsp;- host: "aes-labs.com"   
+  rules:  
+    - host: "aes-labs.com"   
       path: "/foo"         # Update this value.   
 <span style="color:blue">filters:</span>  
 <span style="color:blue">- name: keycloak-oauth2-filter</span>  
