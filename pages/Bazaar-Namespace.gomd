@@ -9,7 +9,7 @@
 Authentication  
 Use the following Filter Policy as template  
 
-
+<p>
 apiVersion: getambassador.io/v2  
 kind: FilterPolicy  
 metadata:  
@@ -24,7 +24,7 @@ spec:
 <span style="color:blue">namespace: ambassador</span>  
 <span style="color:blue">arguments:</span>  
 <span style="color:blue">scopes:</span>  
-<span style="color:blue">- "offline_access"</span>  
+<span style="color:blue">- "offline_access"</span></p>  
   
 
 Rate Limiting Filter has been applied to cluster.
