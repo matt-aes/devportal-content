@@ -13,7 +13,7 @@ Use the following Filter Policy as template
 apiVersion: getambassador.io/v2  
 kind: FilterPolicy  
 metadata:  
-  name: api-filter-policy  
+$\quad \text{name: api-filter-policy \quad}$  
   namespace: default  
 spec:  
   rules:  
