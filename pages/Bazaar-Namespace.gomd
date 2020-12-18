@@ -14,6 +14,13 @@ Authentication:&nbsp;&nbsp;&nbsp;&nbsp;Use the following Filter Policy as templa
 <br />
 <br />  
    test indentation
+   
+   
+* Foo
+* * *
+* Bar
+
+
 
 apiVersion:&nbsp;&nbsp;getambassador.io/v2     
 kind:&nbsp;&nbsp;FilterPolicy  
