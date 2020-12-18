@@ -13,9 +13,9 @@ Use the following Filter Policy as template
 apiVersion: getambassador.io/v2  
 kind: FilterPolicy  
 metadata:  
-&emsp;name: api-filter-policy
-&emsp;namespace: default  
-&emsp;&emsp;spec:  
+    name: api-filter-policy
+      namespace: default  
+        spec:  
   rules:  
     - host: "aes-labs.com"   
       path: "/foo"         # Update this value.   
