@@ -13,8 +13,8 @@ Use the following Filter Policy as template
 apiVersion: getambassador.io/v2  
 kind: FilterPolicy    
 metadata:    
-    name: api-filter-policy  
-      namespace: default    
+··name: api-filter-policy  
+····namespace: default    
         spec:  
   rules:  
     - host: "aes-labs.com"   
@@ -24,7 +24,7 @@ metadata:
 <span style="color:blue">namespace: ambassador</span>  
 <span style="color:blue">arguments:</span>  
 <span style="color:blue">scopes:</span>  
-<span style="color:blue">- "offline_access"</span> 
+<span style="color:blue">- "offline_access"</span>
   
 
 Rate Limiting Filter has been applied to cluster.
