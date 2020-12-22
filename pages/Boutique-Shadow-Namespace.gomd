@@ -1,7 +1,6 @@
-| Namespace          | Owner                          | Host           |Authentication Available |Rate Limiting Available |Service Preview Enabled|
+| Namespace          | Owner                          | Host           |<p style="text-align: center;">Authentication Available</p> |Rate Limiting Available |Service Preview Enabled|
 |--------------------|--------------------------------|--------------- |-------------------------|------------------------|-----------------------|
-| boutique-shadow           | Boutique Project Team          | aes-labs.com   | Yes           | Yes                    | Yes                   |
-
+| boutique-shadow           | Boutique Project Team          | aes-labs.com   | <p style="text-align: center;">Yes</p>          | <p style="text-align: center;">Yes</p>                   | <p style="text-align: center;">Yes</p>                  |
 
 
 
