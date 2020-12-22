@@ -1,4 +1,3 @@
-This is the botique shadow page
 
 The shadow Mapping:  
 <p>In Ambassador Edge Stack, you can enable shadowing for a given mapping by setting shadow: true in your Mapping.   
