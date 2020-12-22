@@ -29,3 +29,60 @@ spec:
               - "offline_access"
 ---
 ~~~
+
+
+
+Enable rate limit: Include the following to mapping to enable rate limits.
+
+
+~~~
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
+  name: quote-backend
+  namespace: ambassador
+spec:
+  prefix: /backend/     # Edit for proper prefix
+  service: quote        # Edit for proper service
+  labels:
+    ambassador:
+      - request_label:
+        - 5_rpm
+---
+~~~
+
+# The circuit_breaker configuration in Ambassador allows the configuration of  max_connections per-Mapping. 
+# This, along with headers-based routing, allows you to configure a quota of the number of connections each consumer 
+# is able to create to an upstream when identifying information is set in a header.
+
+# The example below shows how two customers,  customer_id: 1 and customer_id: 2 accessing the same upstream service 
+# will have different connection quotas:
+
+~~~
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
+  name: api-customer-1
+spec:
+  prefix: /api/             # Edit for proper prefix
+  service: api-service      # Edit for proper service
+  headers:
+    customer_id: 1           # Edit for proper header value
+  circuit_breakers:
+  - max_connections: 1024
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
+  name: api-customer-2
+spec:
+  prefix: /api/               # Edit for proper prefix
+  service: api-service        # Edit for proper service
+  headers:
+    customer_id: 2            # Edit for proper header value
+circuit_breakers:
+  - max_connections: 2048
+---
+~~~
