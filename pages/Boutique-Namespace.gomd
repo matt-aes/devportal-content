@@ -1,3 +1,5 @@
-Boutique NameSpace page 
-
+| Namespace          | Owner                          | Host           |Authentication |Rate Limiting |Service Preview Enabled|
+|--------------------|--------------------------------|--------------- |--------------|---------------|-----------------------|
+| boutique           | Bazaar Project Team            | aes-labs.com   | Yes          | Yes           | Yes                   |
+|-----------------------------------------------------------------------------------------------------------------------------|
 
