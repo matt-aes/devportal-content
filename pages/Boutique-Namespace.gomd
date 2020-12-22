@@ -1,6 +1,6 @@
-| Namespace          | Owner                          | Host           |Authentication available |Rate Limiting available |Service Preview Enabled|
+| Namespace          | Owner                          | Host           |Authentication Available |Rate Limiting Available |Service Preview Enabled|
 |--------------------|--------------------------------|--------------- |-------------------------|------------------------|-----------------------|
-| boutique           | Boutique Project Team          | aes-labs.com   | Yes                     | Yes                    | Yes                   |
+| boutique           | Boutique Project Team          | aes-labs.com   | Yes           | Yes                    | Yes                   |
 
 
 
