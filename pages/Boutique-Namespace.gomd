@@ -1,3 +1,31 @@
 | Namespace          | Owner                          | Host           |Authentication |Rate Limiting |Service Preview Enabled|
 |--------------------|--------------------------------|--------------- |--------------|---------------|-----------------------|
 | boutique           | Boutique Project Team          | aes-labs.com   | Yes          | Yes           | Yes                   |
+
+
+
+
+
+
+Enable authentication:  Include the FilterPolicy in the manifest to enable Authentication.  
+Note:path value should be edited for appropriate prefix.
+
+~~~
+---
+apiVersion: getambassador.io/v2
+kind: FilterPolicy
+metadata:
+  name: api-filter-policy
+  namespace: boutique
+spec:
+  rules:
+    - host: "aes-labs.com"
+      path: "foo"         # update this value
+      filters:
+        - name: keycloak-oauth2-filter
+          namespace: ambassador
+          arguments:
+            scopes:
+              - "offline_access"
+---
+~~~
