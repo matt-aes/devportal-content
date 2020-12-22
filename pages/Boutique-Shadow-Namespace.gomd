@@ -1,3 +1,9 @@
+| Namespace          | Owner                          | Host           |Authentication Available |Rate Limiting Available |Service Preview Enabled|
+|--------------------|--------------------------------|--------------- |-------------------------|------------------------|-----------------------|
+| boutique-shadow           | Boutique Project Team          | aes-labs.com   | Yes           | Yes                    | Yes                   |
+
+
+
 
 The shadow Mapping:  
 <p>In Ambassador Edge Stack, you can enable shadowing for a given mapping by setting shadow: true in your Mapping.   
