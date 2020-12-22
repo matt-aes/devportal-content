@@ -52,12 +52,12 @@ spec:
 ---
 ~~~
 
-# The circuit_breaker configuration in Ambassador allows the configuration of  max_connections per-Mapping. 
-# This, along with headers-based routing, allows you to configure a quota of the number of connections each consumer 
-# is able to create to an upstream when identifying information is set in a header.
+The circuit_breaker configuration in Ambassador allows the configuration of  max_connections per-Mapping.   
+This, along with headers-based routing, allows you to configure a quota of the number of connections each consumer   
+is able to create to an upstream when identifying information is set in a header.  
 
-# The example below shows how two customers,  customer_id: 1 and customer_id: 2 accessing the same upstream service 
-# will have different connection quotas:
+The example below shows how two customers,  customer_id: 1 and customer_id: 2 accessing the same upstream service  
+will have different connection quotas:  
 
 ~~~
 ---
