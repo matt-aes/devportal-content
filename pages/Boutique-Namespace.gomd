@@ -23,7 +23,7 @@ spec:
       path: "foo"         # update this value
       filters:
         - name: keycloak-oauth2-filter
-          namespace: ambassador
+          namespace: ambassador  
           arguments:
             scopes:
               - "offline_access"
@@ -41,7 +41,7 @@ apiVersion: getambassador.io/v2
 kind: Mapping
 metadata:
   name: quote-backend
-  namespace: ambassador
+  namespace: boutique  
 spec:
   prefix: /backend/     # Edit for proper prefix
   service: quote        # Edit for proper service
