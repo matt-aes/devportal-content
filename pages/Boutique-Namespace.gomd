@@ -7,7 +7,7 @@
 
 
 
-<span style="color:blue">Enable authentication:</span>  
+## <span style="color:blue">Enable authentication:</span>  
 
 
 ~~~
@@ -32,7 +32,7 @@ spec:
 
 
 
-<span style="color:blue">Enable Rate Limit</span>
+## <span style="color:blue">Enable Rate Limit</span>
 
 
 ~~~
