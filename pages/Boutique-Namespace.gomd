@@ -12,7 +12,7 @@
 
 |                                          |
 |------------------------------------------|
-|apiVersion: getambassador.io/v2  kind: FilterPolicy metadata:           |
+|apiVersion: getambassador.io/v2  <br>kind: FilterPolicy</br> metadata:           |
                        
                                  
   name: api-filter-policy                 
