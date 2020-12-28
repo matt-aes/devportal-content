@@ -7,8 +7,8 @@
 
 
 
-Enable authentication:  Include the FilterPolicy in the manifest to enable Authentication.  
-Note:path value should be edited for appropriate prefix.
+<span style="color:blue">Enable authentication:</span>  
+
 
 ~~~
 ---
@@ -20,7 +20,7 @@ metadata:
 spec:
   rules:
     - host: "aes-labs.com"
-      path: "foo"         # update this value
+      path: "foo"         # update this value<span style="color:green">some *blue* text</span>
       filters:
         - name: keycloak-oauth2-filter
           namespace: ambassador  
@@ -32,7 +32,7 @@ spec:
 
 
 
-Enable rate limit: Include the following to mapping to enable rate limits.
+<span style="color:blue">Enable Rate Limit</span>
 
 
 ~~~
