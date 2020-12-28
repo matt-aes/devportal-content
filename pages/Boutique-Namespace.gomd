@@ -7,7 +7,7 @@
 
 
 
-## <span style="color:blue">Enable authentication:</span>  
+### <span style="color:blue">Enable authentication:</span>  
 
 
 ~~~
@@ -20,7 +20,7 @@ metadata:
 spec:
   rules:
     - host: "aes-labs.com"
-      path: "foo"         # update this value<span style="color:green">some *blue* text</span>
+      path: "foo"                                     # update this value
       filters:
         - name: keycloak-oauth2-filter
           namespace: ambassador  
@@ -32,7 +32,7 @@ spec:
 
 
 
-## <span style="color:blue">Enable Rate Limit</span>
+### <span style="color:blue">Enable Rate Limit</span>
 
 
 ~~~
