@@ -10,7 +10,7 @@
 ### <span style="color:blue">Enable authentication:</span>  
 
 
-~~~
+|                                          |
 |------------------------------------------|
 |apiVersion: getambassador.io/v2           |
 |kind: FilterPolicy                        |
@@ -27,8 +27,8 @@
 |          arguments:                      |
 |            scopes:                       |              - "offline_access"
 |                                          |
-|~~~                                       |
-|------------------------------------------|
+|                                          |
+
 
 
 ### <span style="color:blue">Enable Rate Limit</span>
