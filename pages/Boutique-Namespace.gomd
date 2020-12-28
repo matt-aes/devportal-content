@@ -12,9 +12,9 @@
 
 |                                          |
 |------------------------------------------|
-|apiVersion: getambassador.io/v2           |
-kind: FilterPolicy                        
-metadata:                                 
+|apiVersion: getambassador.io/v2  kind: FilterPolicy metadata:           |
+                       
+                                 
   name: api-filter-policy                 
   namespace: boutique                     
 spec:                                     
