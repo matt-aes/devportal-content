@@ -10,23 +10,24 @@
 ### <span style="color:blue">Enable authentication:</span>  
 
 
-|                                          |
-|------------------------------------------|
-|apiVersion: getambassador.io/v2  <br>kind: FilterPolicy</br> metadata:           |
-                       
-                                 
-  name: api-filter-policy                 
-  namespace: boutique                     
-spec:                                     
-  rules:                                  
-    - host: "aes-labs.com"                
-      path: "foo"                                    # update this value
-      filters:                            
-        - name: keycloak-oauth2-filter    
-          namespace: ambassador           
-          arguments:                      
-            scopes:                                     - "offline_access"
-                                          
+|<pre>                                 
+apiVersion: getambassador.io/v2
+kind: FilterPolicy
+metadata:
+  name: api-filter-policy
+  namespace: default
+spec:
+  rules:
+    - host: "aes-labs.com" 
+      path: /foo/         <span style="color:green"># update this value</span>
+      filters:
+        - name: keycloak-oauth2-filter
+          namespace: ambassador
+          arguments:
+            scopes:
+              - "offline_access"
+</pre>                                  
+                  
                                           
 
 
