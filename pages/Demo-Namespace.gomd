@@ -1,4 +1,4 @@
 | Namespace          | Owner                          | Host           |Authentication |Rate Limiting |Service Preview Enabled|
 |--------------------|--------------------------------|--------------- |--------------|---------------|-----------------------|
-| demo               | Demo Project Team              |   *            | Yes          | Yes           | Yes                   |
+| demo               | Demo Project Team              |   aes-demo.com            | No          | Yes           | Yes                   |
 
