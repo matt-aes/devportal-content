@@ -70,7 +70,7 @@ spec:
   prefix: /api/            <span style="color:green"># update this value</span>
   service: api-service     <span style="color:green"># update this value</span>
   headers:
-    customer_id: 2          <span style="color:green"># update this value</span>
+    customer_id: 2         <span style="color:green"># update this value</span>
 circuit_breakers:
   - max_connections: 2048
 ---
