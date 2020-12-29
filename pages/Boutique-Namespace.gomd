@@ -14,7 +14,7 @@ metadata:
   namespace: default
 spec:
   rules:
-    - host: "aes-labs.com" 
+    - host: "aes-labs.mturner.k736.net" 
       path: /foo/         <span style="color:green"># update this value</span>
       filters:
         - name: keycloak-oauth2-filter
