@@ -4,5 +4,8 @@
 |--------------------|--------------------------------|--------------- |--------------|---------------|-----------------------|
 | ambassador         | Operations                     | N/A            | N/A          | N/A           | N/A                   |
 | argocd             | Operations                     | *              | N/A          | N/A           | N/A                   |
-| [boutique](https://aes-labs.mturner.k736.net/docs/page/Boutique-Namespace)            | Boutique Project Team          | aes-labs.com   | Yes          | No            | Yes                   |
-| [demo](https://aes-labs.mturner.k736.net/docs/page/Demo-Namespace)               | Open to all                    | aes-demo.com              | No           | Yes           | Yes                   |
+| [boutique](https://aes-labs.mturner.k736.net/docs/page/Boutique-Namespace)            | Boutique Project Team          |[aes-labs](https://aes-labs.mturner.k736.net)  | Yes          | No            | Yes                   |
+| [demo](https://aes-labs.mturner.k736.net/docs/page/Demo-Namespace)               | Open to all                    | [aes-demo](https://aes-demo.mturner.k736.net)             | No           | Yes           | Yes                   |
+
+
+
