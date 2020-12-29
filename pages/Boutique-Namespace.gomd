@@ -2,9 +2,9 @@
 |--------------------|--------------------------------|--------------- |-------------------------|------------------------|-----------------------|
 | boutique           | Boutique Project Team          | aes-labs.com   | Yes           | Yes                    | Yes                   |
 
-
-### <span style="color:blue">Authentication:</span>  
 <pre>
+### <span style="color:blue">Authentication:</span>  
+
 ---  
 apiVersion: getambassador.io/v2
 kind: FilterPolicy
