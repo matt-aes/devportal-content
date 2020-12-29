@@ -3,32 +3,28 @@
 |<p style="text-align: center;">boutque-shadow</p>          |<p style="text-align: center;">Boutique Project Team</p>         |<p style="text-align: center;">aes-labs.com</p>  | <p style="text-align: center;">Yes</p>          | <p style="text-align: center;">Yes</p>                   | <p style="text-align: center;">Yes</p>                  |
 
  
-The shadow Mapping:  
-<p>In Ambassador Edge Stack, you can enable shadowing for a given mapping by setting shadow: true in your Mapping.   
+<span style="color:green">Shadow Traffic Mapping</span>  
+
+In Ambassador Edge Stack, you can enable shadowing for a given mapping by setting shadow: true in your Mapping.   
 One copy proceeds as if the shadowing Mapping was not present: the request is handed onward per the service(s) defined   
-by the non-shadow Mappings, and the reply from whichever service is picked is handed back to the client. </p> 
+by the non-shadow Mappings, and the reply from whichever service is picked is handed back to the client.   
 
-<p>The second copy is handed to the service defined by the Mapping with shadow set.   
-Any reply from this service is ignored, rather than being handed back to the client.</p>
+The second copy is handed to the service defined by the Mapping with shadow set.   
+Any reply from this service is ignored, rather than being handed back to the client.
 
-<p>Only a single shadow per resource can be specified (i.e., you can't shadow the same resource to more than 1 additional destination).   
+Only a single shadow per resource can be specified (i.e., you can't shadow the same resource to more than 1 additional destination).   
 In this situation, Ambassador Edge Stack will indicate an error in the diagnostic service, and only one shadow will be used.   
-If you need to implement this type of use case, you should shadow traffic to a multicast proxy (or equivalent).</p>  
+If you need to implement this type of use case, you should shadow traffic to a multicast proxy (or equivalent).   
 
-<p>You can shadow multiple different services.  
-During shadowing, the host header is modified such that -shadow is appended.</p>  
+You can shadow multiple different services.  
+During shadowing, the host header is modified such that -shadow is appended.    
 
-<p>Example
 The following example may help illustrate how shadowing can be used.  
-This first attribute sets up a basic mapping between the myservice Kubernetes service and the /myservice/ prefix, as expected.</p>  
+This first attribute sets up a basic mapping between the frontend.boutique service  and the "/" prefix.   
 
 
-
-
-
-Production service mapping. For reference only.  
-
-~~~
+ 
+<span style="color:green">This is the mapping of the service to be shadowed. This mapping should not be altered.</span>
 ---
 apiVersion: getambassador.io/v2  
 kind: Mapping  
@@ -40,13 +36,10 @@ spec:
   prefix: /
   service: frontend.boutique
 ---  
-~~~
 
 
-
-Example Traffic Shadow mapping.  
-
-~~~
+<span style="color:green">Example Traffic Shadow mapping.</span>
+  
 ---
 apiVersion: getambassador.io/v2
 kind:  Mapping
@@ -54,10 +47,10 @@ metadata:
   name:  myservice-shaddow
   namespace: boutique-shadow
 spec:
-  prefix: /                                   # Edit for proper prefix.
+  prefix: /                                   <span style="color:green"># Edit for proper value.</span>
   host: aes-labs.com
-  service: frontend-shadow.boutique.shadow   # Edit for proper service.
+  service: frontend-shadow.boutique.shadow    <span style="color:green"># Edit for propervalue.</span>
   shadow: true
-  weight: 20                                  # Edit for proper weight.
+  weight: 20                                   <span style="color:green"># Edit for proper value.</span>
 ---  
-~~~
+</pre?
