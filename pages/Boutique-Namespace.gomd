@@ -2,8 +2,9 @@
 |--------------------|--------------------------------|--------------- |-------------------------|------------------------|-----------------------|
 | boutique           | Boutique Project Team          | aes-labs.com   | Yes           | Yes                    | Yes                   |
 
+
 <pre>
-### <span style="color:blue">Authentication:</span>  
+<span style="color:blue">Authentication:</span>    
 
 ---  
 apiVersion: getambassador.io/v2
@@ -24,8 +25,7 @@ spec:
 ---                                       
 
 
-### <span style="color:blue">Rate Limit</span>
-
+<span style="color:blue">Rate Limit</span>
 ---~
 apiVersion: getambassador.io/v2
 kind: Mapping
@@ -41,8 +41,7 @@ spec:
         - 5_rpm
 ---
 
-### <span style="color:blue">Circuit Break:</span>  
-
+<span style="color:blue">Circuit Break:</span>  
 The circuit_breaker configuration in Ambassador allows the configuration of  max_connections per-Mapping.   
 This, along with headers-based routing, allows you to configure a quota of the number of connections each consumer   
 is able to create to an upstream when identifying information is set in a header.  
