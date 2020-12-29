@@ -2,7 +2,7 @@
 |--------------------|--------------------------------|--------------- |-------------------------|------------------------|-----------------------|
 |<p style="text-align: center;">boutque-shadow</p>          |<p style="text-align: center;">Boutique Project Team</p>         |<p style="text-align: center;">aes-labs.com</p>  | <p style="text-align: center;">Yes</p>          | <p style="text-align: center;">Yes</p>                   | <p style="text-align: center;">Yes</p>                  |
 
- 
+<pre> 
 <span style="color:green">Shadow Traffic Mapping</span>  
 
 In Ambassador Edge Stack, you can enable shadowing for a given mapping by setting shadow: true in your Mapping.   
@@ -53,4 +53,4 @@ spec:
   shadow: true
   weight: 20                                   <span style="color:green"># Edit for proper value.</span>
 ---  
-</pre?
+</pre>
