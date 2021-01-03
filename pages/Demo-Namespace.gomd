@@ -11,11 +11,11 @@ Namespace          | <p style="text-align: center;">Owner</p>                   
 apiVersion: getambassador.io/v2
 kind: FilterPolicy
 metadata:
-  name: api-filter-policy
+  name: demo-auth-filter-policy
   namespace: demo
 spec:
   rules:
-    - host: "aes-labs.mturner.k736.net" 
+    - host: "aes-demo.mturner.k736.net" 
       path: /foo/         <span style="color:green"># update this value</span>
       filters:
         - name: keycloak-oauth2-filter
