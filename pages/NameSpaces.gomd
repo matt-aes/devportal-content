@@ -1,10 +1,8 @@
-<p style="text-align: center;">Centered text</p>
-| Namespace          |<p style="text-align: center;">Owner</p>                          | <p style="text-align: center;Host Name</p>           |<p style="text-align: center;Authentication Available</p> |<p style="text-align: center;Rate Limiting Available</p> |<p style="text-align: center;Service Preview Enabled</p>|
+| Namespace          | Owner                          | Host Name           |Authentication Available |Rate Limiting Available |Service Preview Enabled|
 |--------------------|--------------------------------|--------------- |--------------|---------------|-----------------------|
-| ambassador         | <p style="text-align: center;">Operations</p>                     | <p style="text-align: center;No</p>            | <p style="text-align: center;No</p>          | <p style="text-align: center;No</p>           | No</p>                   |
-| argocd             | <p style="text-align: center;">Operations</p>                     | <p style="text-align: center;*</p>              | <p style="text-align: center;No</p>          | <p style="text-align: center;No</p>           | No</p>                   |
-| [boutique](https://aes-labs.mturner.k736.net/docs/page/Boutique-Namespace)| <p style="text-align: center;Boutique Project Team</p>          |<p style="text-align: center;">[aes-labs](https://aes-labs.mturner.k736.net)</p>  | Yes          | No            | Yes                   |
-| <p style="text-align: center;">[demo](https://aes-labs.mturner.k736.net/docs/page/Demo-Namespace)</p>| Operations| [aes-demo](https://aes-demo.mturner.k736.net)             | No           | Yes           | Yes                   |
-| <p style="text-align: center;">[bazaar](https://aes-labs.mturner.k736.net/docs/page/Bazaar-Namespace)</p>| <p style="text-align: center;">Bazaar Project Team</p> | <p style="text-align: center;">[aes-demo](https://aes-demo.mturner.k736.net)</p>             | <p style="text-align: center;">No</p>           | <p style="text-align: center;">Yes</p>           | <p style="text-align: center;">Yes</p>                   |
-
+| ambassador         | Operations                     | N/A            | N/A          | N/A           | N/A                   |
+| argocd             | Operations                     | *              | N/A          | N/A           | N/A                   |
+| [boutique](https://aes-labs.mturner.k736.net/docs/page/Boutique-Namespace)| Boutique Project Team          |[aes-labs](https://aes-labs.mturner.k736.net)  | Yes          | No            | Yes                   |
+| [demo](https://aes-labs.mturner.k736.net/docs/page/Demo-Namespace)| Operations| [aes-demo](https://aes-demo.mturner.k736.net)             | No           | Yes           | Yes                   |
+| [bazaar](https://aes-labs.mturner.k736.net/docs/page/Bazaar-Namespace)| Bazaar Project Team | [aes-demo](https://aes-demo.mturner.k736.net)             | No           | Yes           | Yes                   |
 
