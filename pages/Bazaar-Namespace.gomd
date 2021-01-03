@@ -1,6 +1,6 @@
-| Namespace          | Owner                          | Host           |Authentication Available |Rate Limiting Available |Service Preview Enabled|
+| Namespace          | <p style="text-align: center;">Owner</p>                          | <p style="text-align: center;">Host</p>           |<p style="text-align: center;">Authentication Available</p> |<p style="text-align: center;">Rate Limiting Available</p> |<p style="text-align: center;">Service Preview Enabled</p>|
 |--------------------|--------------------------------|--------------- |-------------------------|------------------------|-----------------------|
-| bazaar           | Bazaar Project Team          | aes-demo.com   | Yes           | Yes                    | Yes                   |
+| bazaar             | <p style="text-align: center;">Bazaar Project Team</p>            | <p style="text-align: center;">aes-demo.com</p>   | <p style="text-align: center;">Yes</p>                     | <p style="text-align: center;">Yes</p>                    | <p style="text-align: center;">Yes</p>                   |
 
 
 <pre>
