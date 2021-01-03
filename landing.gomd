@@ -18,8 +18,8 @@ For details on customizing the portal, see https://www.getambassador.io/referenc
 
 
 
-#### <span style="color:blue">Available Namespaces</span>   
-<br></br>
+#### <span style="color:blue">Available Namespaces</span>     
+
 | Namespace          | Owner                          | Host Name           |Authentication Available |Rate Limiting Available |Service Preview Enabled|
 |--------------------|--------------------------------|--------------- |--------------|---------------|-----------------------|
 | ambassador         | Operations                     | N/A            | N/A          | N/A           | N/A                   |
