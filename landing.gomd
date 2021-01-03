@@ -17,7 +17,7 @@ This content is fully customizable for your specific needs.
 For details on customizing the portal, see https://www.getambassador.io/reference/dev-portal.
 
 
-
+<pre>
 #### <span style="color:blue">Available Namespaces</span>   
 
 | Namespace          | Owner                          | Host Name           |Authentication Available |Rate Limiting Available |Service Preview Enabled|
@@ -63,3 +63,4 @@ The following services are exposed through this Ambassador instance:
             {{end}}
     </tbody>
 </table>
+</pre>
