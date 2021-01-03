@@ -16,7 +16,7 @@ Please see [NameSpaces](https://aes-labs.mturner.k736.net/docs/page/NameSpaces) 
 This content is fully customizable for your specific needs. 
 For details on customizing the portal, see https://www.getambassador.io/reference/dev-portal.
 
-### <span style="color:purple">Available Namespaces</span> 
+#### <span style="color:blue">Available Namespaces</span> 
 
 | Namespace          | Owner                          | Host Name           |Authentication Available |Rate Limiting Available |Service Preview Enabled|
 |--------------------|--------------------------------|--------------- |--------------|---------------|-----------------------|
@@ -29,7 +29,7 @@ For details on customizing the portal, see https://www.getambassador.io/referenc
 
 
 
-### <span style="color:blue">Available Services</span> 
+#### <span style="color:blue">Available Services</span> 
 
 The following services are exposed through this Ambassador instance:
 
