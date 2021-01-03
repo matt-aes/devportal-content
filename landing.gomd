@@ -10,6 +10,12 @@
 This content is fully customizable for your specific needs. 
 For details on customizing the portal, see https://www.getambassador.io/reference/dev-portal.
 
+
+These pages are designed to enable app dev teams  by integrating self-service infrastructure with safety workflows.
+This content is fully customizable for your specific needs. [NameSpaces](https://aes-labs.mturner.k736.net/docs/page/NameSpaces)   
+
+![test-image](https://github.com/matt-aes/devportal-content.git/images/dev-portal-image-02.png)
+
 ## Available Services
 
 The following services are exposed through this Ambassador instance:
