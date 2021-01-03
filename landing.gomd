@@ -5,7 +5,7 @@
 
 # Welcome to the Ambassador Dev Portal
 
-## Customizing the Portal  try 8
+## Customizing the Portal  try 9
 
 This content is fully customizable for your specific needs. 
 For details on customizing the portal, see https://www.getambassador.io/reference/dev-portal.
@@ -17,7 +17,11 @@ This content is fully customizable for your specific needs. [NameSpaces](https:/
 
 (![dev-portal-image-02](https://user-images.githubusercontent.com/61284826/103486266-8f6dc380-4dca-11eb-9f81-c23e58a567e4.png))
 
-(![dev-portal-image-02](https://github.com/matt-aes/devportal-content/master/images/dev-portal-image-02.png))
+
+(![relative](dev-portal-image-02.png
+
+<img src="images/dev-portal-image-02.png" width="100">
+
 
 
 
