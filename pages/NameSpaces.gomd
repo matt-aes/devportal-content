@@ -1,6 +1,6 @@
 
 
-| Namespace          | Owner                          | Host Name           |Authentication |Rate Limiting |Service Preview Enabled|
+| Namespace          | Owner                          | Host Name           |Authentication Available |Rate Limiting Available |Service Preview Enabled|
 |--------------------|--------------------------------|--------------- |--------------|---------------|-----------------------|
 | ambassador         | Operations                     | N/A            | N/A          | N/A           | N/A                   |
 | argocd             | Operations                     | *              | N/A          | N/A           | N/A                   |
