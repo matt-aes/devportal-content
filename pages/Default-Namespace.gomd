@@ -21,7 +21,7 @@ spec:
   labels:
     ambassador:
       - request_label:
-        - 5_rpm
+        - 5rpm
 ---
 
 
