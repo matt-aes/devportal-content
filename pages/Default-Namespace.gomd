@@ -3,6 +3,10 @@
 | default           | Boutique Project Team          | aes-labs.com   | Yes           | Yes                    | Yes                   |
 
 
+![architecture-diagram](https://user-images.githubusercontent.com/61284826/103574433-e6909880-4e9d-11eb-9f4d-f09e1f305552.png)
+
+
+
 <pre>
 <span style="color:blue">Authentication:</span>    
 
