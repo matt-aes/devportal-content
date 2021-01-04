@@ -4,9 +4,25 @@
 
 
 
-![architecture-diagram](https://user-images.githubusercontent.com/61284826/103575165-48053700-4e9f-11eb-9a40-d97a1636fdac.png)
+![architecture-diagram](https://user-images.githubusercontent.com/61284826/103575405-b21ddc00-4e9f-11eb-8006-9f1eaf09d8b0.png)
 
 
+
+<span style="color:blue">Rate Limit</span>
+---~
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
+  name: name-here              <span style="color:green"># update this value</span>
+  namespace: default  
+spec:
+  prefix: /prefix-here/        <span style="color:green"># update this value</span>
+  service: service-here        <span style="color:green"># update this value</span>
+  labels:
+    ambassador:
+      - request_label:
+        - 5_rpm
+---
 
 
 <pre>
@@ -31,21 +47,7 @@ spec:
 ---                                       
 
 
-<span style="color:blue">Rate Limit</span>
----~
-apiVersion: getambassador.io/v2
-kind: Mapping
-metadata:
-  name: name-here              <span style="color:green"># update this value</span>
-  namespace: default  
-spec:
-  prefix: /prefix-here/        <span style="color:green"># update this value</span>
-  service: service-here        <span style="color:green"># update this value</span>
-  labels:
-    ambassador:
-      - request_label:
-        - 5_rpm
----
+
 
 <span style="color:blue">Circuit Break:</span>  
 The circuit_breaker configuration in Ambassador allows the configuration of  max_connections per-Mapping.   
