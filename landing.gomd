@@ -25,7 +25,7 @@ For details on customizing the portal, see https://www.getambassador.io/referenc
 | ambassador         | Operations                     | N/A            | N/A          | N/A           | N/A                   |
 | argocd             | Operations                     | *              | N/A          | N/A           | N/A                   |
 | [default](https://aes-labs.com/docs/page/Default-Namespace)| Boutique Project Team          |[aes-labs](https://aes-labs.com)  | Yes          | No            | Yes                   |
-| [test](https://aes-labs.com/docs/page/Demo-Namespace)| Demo Team| [aes-demo](https://aes-demo.com)             | Yes           | Yes           | Yes                   |
+| [test](https://aes-labs.com/docs/page/Demo-Namespace)| Demo Team| [aes-demo](https://aes-demo.com) [aes-labs](https://aes-labs.com)            | Yes           | Yes           | Yes                   |
 | [bazaar](https://aes-labs.com/docs/page/Bazaar-Namespace)| Bazaar Project Team | [aes-demo](https://aes-demo.mturner.k736.net)             | No           | Yes           | Yes                   |
 
 
