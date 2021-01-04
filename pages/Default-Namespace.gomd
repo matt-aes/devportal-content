@@ -1,6 +1,6 @@
 | Namespace          | Owner                          | Host           |Authentication Available |Rate Limiting Available |Service Preview Enabled|
 |--------------------|--------------------------------|--------------- |-------------------------|------------------------|-----------------------|
-| boutique           | Boutique Project Team          | aes-labs.com   | Yes           | Yes                    | Yes                   |
+| default           | Boutique Project Team          | aes-labs.com   | Yes           | Yes                    | Yes                   |
 
 
 <pre>
@@ -14,8 +14,8 @@ metadata:
   namespace: default
 spec:
   rules:
-    - host: "aes-labs.mturner.k736.net" 
-      path: /foo/         <span style="color:green"># update this value</span>
+    - host: "aes-labs.com" 
+      path: /prefix-here/         <span style="color:green"># update this value</span>
       filters:
         - name: keycloak-oauth2-filter
           namespace: ambassador
@@ -30,11 +30,11 @@ spec:
 apiVersion: getambassador.io/v2
 kind: Mapping
 metadata:
-  name: quote-backend
-  namespace: boutique  
+  name: name-here              <span style="color:green"># update this value</span>
+  namespace: default  
 spec:
-  prefix: /backend/     <span style="color:green"># update this value</span>
-  service: quote        <span style="color:green"># update this value</span>
+  prefix: /prefix-here/        <span style="color:green"># update this value</span>
+  service: service-here        <span style="color:green"># update this value</span>
   labels:
     ambassador:
       - request_label:
