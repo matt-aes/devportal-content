@@ -32,7 +32,7 @@ spec:
 apiVersion: getambassador.io/v2
 kind: FilterPolicy
 metadata:
-  name: api-filter-policy
+  name: fronted-authfilter-policy
   namespace: default
 spec:
   rules:
